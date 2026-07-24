@@ -1,3 +1,5 @@
+#gulp this is like super simple but its for the aurabar (ignore the print statements that was for debugging)
+
 extends Node2D
 
 var aura_frame := 0
