@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://coahr2skc3g3w"]
 
 [ext_resource type="Script" uid="uid://pcwkwqmu6cbv" path="res://diolouge_testing.gd" id="1_so8em"]
-[ext_resource type="Resource" uid="uid://dgldga8e52j3q" path="res://god.dialogue" id="2_wcvms"]
+[ext_resource type="Resource" uid="uid://dcvewssl1onhl" path="res://untitled.dialogue" id="2_wcvms"]
 
 [node name="Node2D" type="Node2D" unique_id=543543476]
 script = ExtResource("1_so8em")
