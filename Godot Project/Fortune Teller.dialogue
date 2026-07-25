@@ -1,6 +1,6 @@
 ~ start
 do Globals.running = false
-I enter the cave of the Fortune Teller. It's filled with tons of nick-nacks and (random shit).
+I enter the cave of the Fortune Teller. It's filled with tons of nick-nacks and random shit.
 Jimmothy: Hello?
 Fortune Teller: Hello young man! Sit, sit, and let me give you destiny's advice!
 Fortune Teller: You must pay 300 gold to receive my services.
@@ -29,7 +29,10 @@ Fortune Teller: Your future holds harsh trials and tribulations, but your love f
 	Fortune Teller: How dare you insult the wisdom of my ancestors! Repent now or own up to your consequences.
 	Jimmothy: Nah, I'd win.
 	Fortune Teller: YOU'LL PAY FOR THIS.
-	I get cursed and I shrivel up and die due to generational aura loss => END
+	I get cursed and I shrivel up and die due to generational aura loss 
+	do Globals.running = true
+	do Globals._goToHome()
+	=> END
 Fortune Teller: Of course not!
 Fortune Teller: Clocks will torment you for the rest of eternity if you don't be kind to one.
 Jimmothy: Just to be clear, my future is dependent on whether or not I'm nice to a clock?
@@ -38,4 +41,5 @@ Fortune Teller: Our 7 minute session is over, thank you for choosing The Psychic
 A strong wind pushes me out the door before I can rebuke.
 Jimmothy: Clocks? Where have I heard that before...
 do Globals.running = true
+do Globals._goToPostCave()
 => END!

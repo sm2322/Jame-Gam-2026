@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://ckf4mse1tckbi"
+path="res://.godot/imported/old lady.dialogue-30cbffdfbb48c8c8377ba93be45340d8.tres"
+
+[deps]
+
+source_file="res://old lady.dialogue"
+dest_files=["res://.godot/imported/old lady.dialogue-30cbffdfbb48c8c8377ba93be45340d8.tres"]
+
+[params]
+
+defaults=true

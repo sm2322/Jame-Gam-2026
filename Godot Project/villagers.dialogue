@@ -1,11 +1,12 @@
 ~ start
+do Globals.running = false
 Jimmothy: Hey little kid, do you know where the clock is?
 V2: HELP! A WEIRD OLD MAN IS TRYING TO KIDNAP ME! -- screaming head off
 - Jimmothy: WHAT?
 - Jimmothy: This is a giant misunderstanding, you’re not even my type!’ -10 aura
 V2: AHHHHHHHH!
 V1: Stop bothering my child or I’m gonna thwack you!
-Jimmothy: Let it go
+- Jimmothy: *Let it go*
 - Jimmothy: Your child stinks. -5 aura
 	V1: You stink!
 	V1: THWACK
@@ -27,6 +28,9 @@ V3: There it is!
 V3: The clock…
 Jimmothy: What about it?
 V1: We can’t talk about it here. Let’s go inside.
+do Globals._goToHouse() 
+=> END
+~ house
 I go inside their house. Their pet vigorously flaps its wings the second I look at it.
 - Jimmothy: It’s pretty cozy in here!
 	V1: Buttering us up won’t grant you an answer.
@@ -55,4 +59,6 @@ V1: If I were you, I would ditch that idea! Just have fun before it’s all over
 	They all STAB ME
 V1: Are you done? Shoo, get out of my house!
 I get THWACKED and pushed out of her house.
+do Globals.running = true
+do Globals._goToPostHouse()
 => END
