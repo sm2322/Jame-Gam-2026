@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://pyuf3ipc7um0"]
+
+[ext_resource type="Texture2D" uid="uid://bt7mmjsvxuejo" path="res://main_character_jame_gam_july_2026 (1).png" id="1_4flbx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_onrkg"]
+atlas = ExtResource("1_4flbx")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i3pqv"]
+atlas = ExtResource("1_4flbx")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pb4b2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_onrkg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i3pqv")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=1349291914]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=286338302]
+sprite_frames = SubResource("SpriteFrames_pb4b2")
+frame_progress = 0.39582744
