@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cfe1u33rvdbhm"
+path="res://.godot/imported/EnterCave.dialogue-31204927b3aeab7e02a07d83df205ab1.tres"
+
+[deps]
+
+source_file="res://EnterCave.dialogue"
+dest_files=["res://.godot/imported/EnterCave.dialogue-31204927b3aeab7e02a07d83df205ab1.tres"]
+
+[params]
+
+defaults=true

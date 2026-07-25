@@ -1,0 +1,7 @@
+~ start
+do Globals.running = false
+Enter the cave? Quick! You have a limited amount of time before I make a decision for you!
+- Yes I wonder what's in there
+- No I'm not actually going to do anything
+do Globals.running = true
+=> END

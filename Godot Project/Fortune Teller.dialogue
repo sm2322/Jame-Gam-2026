@@ -1,4 +1,5 @@
 ~ start
+do Globals.running = false
 I enter the cave of the Fortune Teller. It's filled with tons of nick-nacks and (random shit).
 Jimmothy: Hello?
 Fortune Teller: Hello young man! Sit, sit, and let me give you destiny's advice!
@@ -36,4 +37,5 @@ Fortune Teller: Now you get it! Don't make rude choices and think of your mother
 Fortune Teller: Our 7 minute session is over, thank you for choosing The Psychics Cave for your lifetime subscription of whimsy and luck. NO REFUNDS. AT ALL COSTS. Goodbye child!
 A strong wind pushes me out the door before I can rebuke.
 Jimmothy: Clocks? Where have I heard that before...
+do Globals.running = true
 => END!
