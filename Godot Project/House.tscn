@@ -11,6 +11,8 @@
 [ext_resource type="Script" uid="uid://b202f2ulvmcw8" path="res://player.gd" id="7_g58hp"]
 [ext_resource type="Texture2D" uid="uid://bt7mmjsvxuejo" path="res://main_character_jame_gam_july_2026 (1).png" id="8_uf5uw"]
 [ext_resource type="Texture2D" uid="uid://lfcnlrye4x4" path="res://Bat/Idle/SimpleEnemies Bat_Idle Spritesheet.png" id="11_qaecf"]
+[ext_resource type="Texture2D" uid="uid://b3dw6biur8kt" path="res://knife_clean.png" id="12_cyg1o"]
+[ext_resource type="Texture2D" uid="uid://drt3gylmh16vm" path="res://knife_bloody.png" id="13_g58hp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b2xwe"]
 texture = ExtResource("1_ct407")
@@ -622,3 +624,22 @@ position = Vector2(96, 11)
 sprite_frames = SubResource("SpriteFrames_qaecf")
 autoplay = "default"
 frame_progress = 0.45806387
+
+[node name="KnifeClean" type="Sprite2D" parent="." unique_id=1920102338]
+position = Vector2(218, 193)
+rotation = 1.5899949
+texture = ExtResource("12_cyg1o")
+
+[node name="KnifeBloody" type="Sprite2D" parent="." unique_id=1809162453]
+position = Vector2(40.000008, 226)
+rotation = -3.0281463
+texture = ExtResource("13_g58hp")
+
+[node name="KnifeClean2" type="Sprite2D" parent="." unique_id=1161981077]
+position = Vector2(47, 78)
+texture = ExtResource("12_cyg1o")
+
+[node name="KnifeBloody2" type="Sprite2D" parent="." unique_id=1774599183]
+position = Vector2(258, 103.99999)
+rotation = 0.9075712
+texture = ExtResource("13_g58hp")
