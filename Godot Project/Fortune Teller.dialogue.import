@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dcvewssl1onhl"
+path="res://.godot/imported/Fortune Teller.dialogue-f23446a12443d4aa65233cdb2fa18b28.tres"
+
+[deps]
+
+source_file="res://Fortune Teller.dialogue"
+dest_files=["res://.godot/imported/Fortune Teller.dialogue-f23446a12443d4aa65233cdb2fa18b28.tres"]
+
+[params]
+
+defaults=true
