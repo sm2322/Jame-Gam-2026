@@ -900,7 +900,7 @@ animations = [{
 size = Vector2(20, 21)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qfhyf"]
-size = Vector2(186, 119)
+size = Vector2(113, 85.5)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lvtmh"]
 atlas = ExtResource("10_yhmtn")
@@ -1136,7 +1136,7 @@ shape = SubResource("RectangleShape2D_qfhyf")
 position = Vector2(2230, 1388)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Old Lady2" unique_id=268766925]
-position = Vector2(146, 29)
+position = Vector2(147.5, 12.25)
 shape = SubResource("RectangleShape2D_qfhyf")
 
 [node name="Villagers" type="Area2D" parent="." unique_id=541940219]

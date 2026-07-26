@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://cilvpys3q81pt"]
+
+[ext_resource type="PackedScene" uid="uid://sikc02ddepyt" path="res://addons/maaacks_menus_template/base/nodes/opening/opening.tscn" id="1_bdpyy"]
+[ext_resource type="Texture2D" uid="uid://0hiqn0amnfhj" path="res://Menus/assets/godot_engine_logo/logo_vertical_color_dark.png" id="2_7nbw8"]
+[ext_resource type="Shader" uid="uid://blglxqedfmdbd" path="res://Background.gdshader" id="3_7nbw8"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yh46s"]
+shader = ExtResource("3_7nbw8")
+shader_parameter/spin_rotation_speed = 2.0
+shader_parameter/move_speed = 7.0
+shader_parameter/offset = Vector2(0, 0)
+shader_parameter/colour_1 = Color(0.4821009, 0.51607, 0.54605925, 1)
+shader_parameter/colour_2 = Color(0, 0, 0, 1)
+shader_parameter/colour_3 = Color(0, 0.05058483, 0.113201864, 1)
+shader_parameter/contrast = 3.5
+shader_parameter/lighting = 0.4
+shader_parameter/spin_amount = 0.25
+shader_parameter/pixel_filter = 740.0
+shader_parameter/is_rotating = false
+
+[node name="Opening" unique_id=1930105641 instance=ExtResource("1_bdpyy")]
+images = Array[Texture2D]([ExtResource("2_7nbw8")])
+
+[node name="ColorRect" type="ColorRect" parent="." index="0" unique_id=570213379]
+material = SubResource("ShaderMaterial_yh46s")
+layout_mode = 0
+offset_left = -166.0
+offset_top = -214.0
+offset_right = 1402.0
+offset_bottom = 964.0
+
+[node name="ImagesContainer" parent="." index="2" unique_id=1471559661]
+theme_override_constants/margin_left = 64
+theme_override_constants/margin_top = 64
+theme_override_constants/margin_right = 64
+theme_override_constants/margin_bottom = 64

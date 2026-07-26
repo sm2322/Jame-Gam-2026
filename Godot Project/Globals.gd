@@ -15,7 +15,8 @@ func _process(delta: float) -> void:
 func _goToCave():
 	get_tree().change_scene_to_file("res://Cave.tscn")
 func _goToHome():
-	get_tree().change_scene_to_file("res://Game.tscn")
+	await get_tree().create_timer(3.0).timeout
+	get_tree().change_scene_to_file("res://Menus/scenes/menus/main_menu/main_menu_with_animations.tscn")
 func _goToPostCave():
 	get_tree().change_scene_to_file("res://Game.tscn")
 	pos = Vector2(509.0,2598.0)
@@ -26,3 +27,5 @@ func _goToPostHouse():
 	get_tree().change_scene_to_file("res://Game.tscn")
 	pos = Vector2(743.0,2253.0)
 	newPlayerPos = true
+func _goToEnd():
+	get_tree().change_scene_to_file("res://Menus/scenes/end_credits/end_credits.tscn")

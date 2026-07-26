@@ -9,11 +9,11 @@ Fortune Teller: You must pay 300 gold to receive my services.
 	Fortune Teller: How stingy! Fate has us here for a reason, but I don't appreciate your penniless behavior. 
 I give her the gold and sit. She pulls out some kind of stone from behind her.
 Fortune Teller: Here it is, my wonderous crystal ball. She's quite the beauty, isn't she?
-- Jimmothy: Woah, it looks so tuff! + 5 aura
+- Jimmothy: Woah, it looks so tuff!
 	Fortune Teller: Yes, yes. It has been passed down my lineage of Fortune Tellers for hundreds of years, in fact, I think- 
 	Jimmothy: I didn't pay to hear your life story.
 	Fortune Teller: Nevermind then...hmph.
-- Jimmothy: Your crystal ball looks like a rock -10 aura
+- Jimmothy: Your crystal ball looks like a rock
 	Fortune Teller: Mind your language! Don't you dare refer to her as that again!
 Fortune Teller: Hum.....Hum.....Hum.....
 Jimmothy: Can you hurry this up?? I have dinner at 6.
@@ -24,12 +24,12 @@ Fortune Teller: It's telling me...it's telling me....
 Jimmothy: It's telling you i'm deaduzz going to leave.
 Fortune Teller: Your future holds harsh trials and tribulations, but your love for others will give you the strength to move forward.
 - Jimmothy: ...Is that it?
-- Jimmothy: This reading is so lame. - 30 aura
+- Jimmothy: This reading is so lame.
 	Jimmothy: Give me my money back or I'm giving this place a one star.
 	Fortune Teller: How dare you insult the wisdom of my ancestors! Repent now or own up to your consequences.
 	Jimmothy: Nah, I'd win.
 	Fortune Teller: YOU'LL PAY FOR THIS.
-	I get cursed and I shrivel up and die due to generational aura loss 
+	I get cursed and I shrivel up and die due to generational aura loss. Try again.
 	do Globals.running = true
 	do Globals._goToHome()
 	=> END

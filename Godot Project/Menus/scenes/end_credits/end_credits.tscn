@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://d68xpwate6w1"]
+
+[ext_resource type="PackedScene" uid="uid://b4bia08ggnqex" path="res://Menus/scenes/credits/scrolling_credits.tscn" id="1_0lals"]
+[ext_resource type="Script" uid="uid://jacftcpvgb5v" path="res://Menus/scenes/end_credits/end_credits.gd" id="2_tgp7g"]
+[ext_resource type="PackedScene" uid="uid://bkcsjsk2ciff" path="res://addons/maaacks_menus_template/base/nodes/music_players/background_music_player.tscn" id="3_vds5n"]
+[ext_resource type="Script" uid="uid://1nf36h0gms3q" path="res://addons/maaacks_menus_template/base/nodes/utilities/capture_focus.gd" id="4_tdm4t"]
+[ext_resource type="Shader" uid="uid://blglxqedfmdbd" path="res://Background.gdshader" id="4_tgp7g"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vds5n"]
+shader = ExtResource("4_tgp7g")
+shader_parameter/spin_rotation_speed = 2.0
+shader_parameter/move_speed = 7.0
+shader_parameter/offset = Vector2(0, 0)
+shader_parameter/colour_1 = Color(0.4821009, 0.51607, 0.54605925, 1)
+shader_parameter/colour_2 = Color(0, 0, 0, 1)
+shader_parameter/colour_3 = Color(0, 0.05058483, 0.113201864, 1)
+shader_parameter/contrast = 3.5
+shader_parameter/lighting = 0.4
+shader_parameter/spin_amount = 0.25
+shader_parameter/pixel_filter = 740.0
+shader_parameter/is_rotating = false
+
+[node name="EndCredits" unique_id=613298766 instance=ExtResource("1_0lals")]
+script = ExtResource("2_tgp7g")
+main_menu_scene_path = ""
+force_mouse_mode_visible = false
+scroll_paused = true
+
+[node name="BackgroundMusicPlayer" parent="." index="0" unique_id=1411252862 instance=ExtResource("3_vds5n")]
+
+[node name="ColorRect" type="ColorRect" parent="." index="1" unique_id=823179038]
+material = SubResource("ShaderMaterial_vds5n")
+layout_mode = 0
+offset_left = -130.0
+offset_top = -230.0
+offset_right = 1331.0
+offset_bottom = 784.0
+
+[node name="BackgroundTextureRect" type="TextureRect" parent="." index="2" unique_id=1166831285]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ScrollContainer" parent="." index="3" unique_id=1039720129]
+scroll_vertical = 1868
+
+[node name="HeaderSpace" parent="ScrollContainer/VBoxContainer" parent_id_path=PackedInt32Array(2067921385) index="0" unique_id=1552560353]
+custom_minimum_size = Vector2(0, 648)
+
+[node name="CreditsLabel" parent="ScrollContainer/VBoxContainer" parent_id_path=PackedInt32Array(2067921385) index="1" unique_id=1486745388]
+custom_minimum_size = Vector2(1152, 0)
+
+[node name="FooterSpace" parent="ScrollContainer/VBoxContainer" parent_id_path=PackedInt32Array(2067921385) index="2" unique_id=1703782196]
+custom_minimum_size = Vector2(0, 648)
+
+[node name="CenterContainer" type="CenterContainer" parent="." index="4" unique_id=535959837]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="EndMessagePanel" type="Panel" parent="CenterContainer" index="0" unique_id=680051131]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(360, 120)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/EndMessagePanel" index="0" unique_id=899651798]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ThankPlayer" type="Label" parent="CenterContainer/EndMessagePanel/VBoxContainer" index="0" unique_id=1020885934]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Thanks for playing!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/EndMessagePanel/VBoxContainer" index="1" unique_id=1208569595]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/EndMessagePanel/VBoxContainer/CenterContainer" index="0" unique_id=1415249609]
+custom_minimum_size = Vector2(256, 0)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 16
+script = ExtResource("4_tdm4t")
+
+[node name="ExitButton" type="Button" parent="CenterContainer/EndMessagePanel/VBoxContainer/CenterContainer/HBoxContainer" index="0" unique_id=1382070624]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Exit"
+
+[node name="MenuButton" type="Button" parent="CenterContainer/EndMessagePanel/VBoxContainer/CenterContainer/HBoxContainer" index="1" unique_id=1504498101]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Menu"
+
+[connection signal="pressed" from="CenterContainer/EndMessagePanel/VBoxContainer/CenterContainer/HBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="CenterContainer/EndMessagePanel/VBoxContainer/CenterContainer/HBoxContainer/MenuButton" to="." method="_on_menu_button_pressed"]

@@ -14,23 +14,41 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="Clock Game Jam"
-run/main_scene="uid://coahr2skc3g3w"
+config/name="Clock Game"
+run/main_scene="res://Menus/scenes/opening/opening.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout="uid://b3lwkndnv7xhn"
 
 [autoload]
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 Globals="*uid://cf1qow6k6dagr"
+AppConfig="*uid://cjke6crjg14a0"
+SceneLoader="*uid://cbwmrnp0af35y"
+ProjectMusicController="*uid://r5t485lr3p7t"
+ProjectUISoundController="*uid://cc37235kj4384"
 
 [dialogue_manager]
 
 runtime/balloon_path="res://Diolouge/balloon.tscn"
 
+[display]
+
+window/size/mode=3
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep_width"
+
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://addons/maaacks_menus_template/plugin.cfg")
+
+[gui]
+
+theme/custom="res://Menus/resources/themes/lab.tres"
 
 [input]
 
@@ -62,7 +80,15 @@ down={
 
 [internationalization]
 
+locale/translations=PackedStringArray("res://addons/maaacks_menus_template/base/translations/menus_translations.en.translation", "res://addons/maaacks_menus_template/base/translations/menus_translations.fr.translation")
 locale/translations_pot_files=PackedStringArray("res://Fortune Teller.dialogue", "res://templete.dialogue", "res://villagers.dialogue", "res://EnterCave.dialogue", "res://old lady.dialogue", "res://clock.dialogue")
+
+[maaacks_menus_template]
+
+disable_install_audio_busses=true
+disable_update_check=false
+disable_install_wizard=true
+copy_path="res://Menus/"
 
 [rendering]
 

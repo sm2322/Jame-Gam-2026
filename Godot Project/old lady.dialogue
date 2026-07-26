@@ -1,47 +1,48 @@
 ~ start
 do Globals.running = false
 Lady: Well well well, don't normally see youngsters like you around these parts
-- MC: "I'm lucky to see you here today"
-- MC: "Holy jumpscare" -5 Aura
+- Jimmothy: I'm lucky to see you here today
+- Jimmothy: Holy jumpscare 
 	Lady: Hrmth rude...
 Lady: What business do you have at my shack in the woods?
-- MC: "See there's this clock..."
-- MC: "None of your business, but..." -5 Aura
+- Jimmothy: See there's this clock...
+- Jimmothy: None of your business, but... 
 Lady: Ahhh so it was your family who cursed as all with the impending explosion that will blow us all to peices
-- MC: Lowkey yeah that was us #oopsies -- i can't believe this is a channel
-- MC: You kinda look like a ugly witch
-	Lady: Your eyes deceive you child - 5 aura
+- Jimmothy: Lowkey yeah that was us #oopsies
+- Jimmothy: You kinda look like a ugly witch
+	Lady: Your eyes deceive you child
 Lady: So you want to know where to find the clock?
-- MC: No shit sherlock I'm not here just to mog you
-- MC: No rush kitten I wanna stay here with you
+- Jimmothy: No shit sherlock I'm not here just to mog you
+- Jimmothy: No rush kitten I wanna stay here with you
 Lady: But first a song!
-- MC: Serenade me beautiful
-- MC: No way in hell you can sing
+- Jimmothy: Serenade me beautiful
+- Jimmothy: No way in hell you can sing
 	Lady: God you are in such a rush for someone with so little left to live
 Lady: Alas the only place to find the clock unto which you seek, is to go far north into the deepest forest, there it awaits the time of your arrival
-- MC: Thanks!
-- MC: Finally I can leave
+- Jimmothy: Thanks!
+- Jimmothy: Finally I can leave
 Lady: Uh Uh UH not so soon... Where is my payment?
-- MC: Payment princess?
-- MC: Ur lowkey chopped no one is paying girl
+- Jimmothy: Payment princess?
+- Jimmothy: Ur lowkey chopped no one is paying girl
 Lady: I require a payment for this knowlege.... unless of course you answer my three fun clock questions.
 Lady: I find this funny because you are being terrorised by a clock teehehehe
 Lady: FIRST, which hand is for minutes on a clock?
-- MC: The smaller hand
+- Jimmothy: The smaller hand
 	Lady: MWAHAHAHA So much aura lost it's beautiful you fool
-- MC: The larger hand
+- Jimmothy: The larger hand
 Lady: Ok out of what gemstone are clocks often calibrated?
-- MC: Diamond
+- Jimmothy: Diamond
 	Lady: Fool not every clock has something that valuable bahahaha
-- MC: Quartz
+- Jimmothy: Quartz
 Lady: Hmmm then how many minutes are in a day?
-- MC: 32,234
+- Jimmothy: 32,234
 	Lady: WRONG SEE YOU IN HELL LOSER *BAMBAMBAM* 
-	The Lady pulls out her glock and shoots you
+	The Lady pulls out her glock and shoots you.
+	You died. Try again
 	do Globals.running = true
 	do Globals._goToHome()
 	=> END
-- MC: At least two
+- Jimmothy: At least two
 Lady: Well then child. You may go and be free. If you are blown to smitherenes by that clock know you will not be missed. BWAHAAHAHAH
 do Globals.running = true
 => END

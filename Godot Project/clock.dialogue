@@ -1,46 +1,48 @@
 ~ start
 do Globals.running = false
 Clock: CHIME CHIME
-MC: Uh, hello?
+Jimmothy: Uh, hello?
 Clock: CHIMEEEEEEEE
-- MC: You can speak right?
-- MC: CHIMEEEEE -5 Aura
+- Jimmothy: You can speak right?
+- Jimmothy: CHIMEEEEE
 	Clock: Did u just chime back at me?
 Clock: Well would you look who it is
-MC: Huh?
+Jimmothy: Huh?
 Clock: Ugh acting oblivious after all this time that's just like you
-- MC: Did we like break up????
+- Jimmothy: Did we like break up????
 	Clock: *ANNOYED CHIME*
-- MC: It is I.
+- Jimmothy: It is I.
 	Clock: *Attempts slow clap but is a clock so it just kinda looks at you*
 Clock: Bet you regret throwing me out now
 Clock: Since I've become a self-repairing world destroying bomb and all
 Clock: I even have this awesome vortex around me, that i STOLE from my favourite game.
 Clock: I may be a clock but i still have taste so obviously Balatro
-MC: .........
+Jimmothy: .........
 Clock: BACK ON TOPIC CHIME
 Clock: So like are you still upset that I killed your whole familiy?
-- MC: YOU DID WHAT
+- Jimmothy: YOU DID WHAT
 	Clock: I'll take that as a yes
-- MC: Nah not really
+- Jimmothy: Nah not really
 	Clock: Just as unempathetic as ever
 Clock: I woke you up, EVERY SINGLE MORNING, and what do i get for it, HATE from everyone. I'm sorry you people want more sleep. JUST GO TO BED EARLIER
-MC: Clockie Poo please, I'm sorry, don't kill everyone
+Jimmothy: Clockie Poo please, I'm sorry, don't kill everyone
 Clock: So... Do you hate me?
-- MC: Lowkey yes BUT STILL
+- Jimmothy: Lowkey yes BUT STILL
 	Clock: WHAT ARE YOU KIDDING ME
 	Clock: CHIME CHIME CHIME CHIME BOOOOOOOOOOM
+	The clock exploded and you died
 	do Globals._goToHome()
-- MC: No of course not
+- Jimmothy: No of course not
 	Clock: Really?
-MC: Yes
+Jimmothy: Yes
 Clock: Wow. Ok then. So like do you think i should still explode and kill everyone?
-- MC: No thank you
-- MC: Not going to lie I don't have a preference
+- Jimmothy: No thank you
+- Jimmothy: Not going to lie I don't have a preference
 	Clock: Oh ok then
 	Clock: CHIME CHIME CHIME CHIME BOOOOOOOOOOM
 Clock: Well. Do you wanna get lunch some time?
-MC: I'd love that
+Jimmothy: I'd love that
 They kissed and lived happily ever after
 do Globals.running = true
+do Globals._goToEnd()
 => END

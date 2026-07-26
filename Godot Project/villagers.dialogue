@@ -3,11 +3,16 @@ do Globals.running = false
 Jimmothy: Hey little kid, do you know where the clock is?
 V2: HELP! A WEIRD OLD MAN IS TRYING TO KIDNAP ME! -- screaming head off
 - Jimmothy: WHAT?
+<<<<<<< Updated upstream
 - Jimmothy: This is a giant misunderstanding, you’re not even my type!’ -10 aura
 V2: AHHHHHHHH! 
+=======
+- Jimmothy: This is a giant misunderstanding, you’re not even worth kidnapping!
+V2: AHHHHHHHH!
+>>>>>>> Stashed changes
 V1: Stop bothering my child or I’m gonna thwack you!
 - Jimmothy: *Let it go*
-- Jimmothy: Your child stinks. -5 aura
+- Jimmothy: Your child stinks.
 	V1: You stink!
 	V1: THWACK
 Jimmothy: I was just asking if you guys knew the direction to the clock.
@@ -19,7 +24,7 @@ V3: You must have a death wish or something.
 Jimmothy: Stop laughing! What’s so bad about clock anyways?
 V3: First, stop lying. No one in this entire forest has the mind to wander around there.
 - Jimmothy: Fine, I just want to know more about a clock.
-- Jimmothy: I’m not lying, I totally want to go see it! - 5 aura
+- Jimmothy: I’m not lying, I totally want to go see it!
 	V1: Stop messing with us and leave then!
 	V1: THWACK
 	Jimmothy: ACK!
@@ -35,7 +40,7 @@ I go inside their house. Their pet vigorously flaps its wings the second I look 
 - Jimmothy: It’s pretty cozy in here!
 	V1: Buttering us up won’t grant you an answer.
 	Jimmothy: Geez, I’m just trying to be nice.
-- Jimmothy: That's a cool parrot! - 10 aura
+- Jimmothy: That's a cool parrot!
 	V2: It's obviously a bat! Are you blind? 
 	V1: Stop annoying (the child?)!
 	V1: THWACK
@@ -44,7 +49,7 @@ Jimmothy: WHAT? WHY STAY HERE, WE NEED TO LEAVE NOW!!
 V1: HUSH YOUSELF, YOU’RE DISTURBING THE BAT.
 V3: We believe there’s no point in trying to hide. We can’t prevent death.
 - Jimmothy: I can prevent it!
-- Jimmothy: Do you all WANT to die or something?? - 10 aura
+- Jimmothy: Do you all WANT to die or something??
 	V3: You are quite the loud mouth.
 	V1: We just need to live our lives in bliss and not think about our impending doom.
 	Jimmothy: Isn’t there something anyone can do?
@@ -52,7 +57,7 @@ V3: Hmm…
 V3: If you’re really so sure about this, head east. The snowy land may give you the answers you seek.
 V1: If I were you, I would ditch that idea! Just have fun before it’s all over.
 - Jimmothy: Thanks for the help!
-- Jimmothy: Ok bruh stop being such a downer. - 30 aura
+- Jimmothy: Ok bruh stop being such a downer.
 	V1: That’s it, you’re done!
 	V1: You’ve insulted my kid, my bat, and now me!
 	V1: GET HIMMM!
