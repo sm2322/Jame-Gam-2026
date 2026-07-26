@@ -1,68 +1,64 @@
 ~ start
 do Globals.running = false
 Jimmothy: Hey little kid, do you know where the clock is?
-V2: HELP! A WEIRD OLD MAN IS TRYING TO KIDNAP ME! -- screaming head off
+Kid: HELP! A WEIRD OLD MAN IS TRYING TO KIDNAP ME! -- screaming head off
 - Jimmothy: WHAT?
-<<<<<<< Updated upstream
-- Jimmothy: This is a giant misunderstanding, you’re not even my type!’ -10 aura
-V2: AHHHHHHHH! 
-=======
 - Jimmothy: This is a giant misunderstanding, you’re not even worth kidnapping!
-V2: AHHHHHHHH!
->>>>>>> Stashed changes
-V1: Stop bothering my child or I’m gonna thwack you!
+Kid: AHHHHHHHH!
+Mom: Stop bothering my child or I’m gonna thwack you!
 - Jimmothy: *Let it go*
 - Jimmothy: Your child stinks.
-	V1: You stink!
-	V1: THWACK
+	Mom: You stink!
+	Mom: THWACK
 Jimmothy: I was just asking if you guys knew the direction to the clock.
-V1: The city? Do you even know what’s going on there?
+Mom: The city? Do you even know what’s going on there?
 Jimmothy: Uh, I’m just in the mood to go sight-seeing!
-V1: HAHHAHHHAHAH
-V1: You hear this guy? He wants to travel! AHHAHHAAHAH
-V3: You must have a death wish or something.
+Mom: HAHHAHHHAHAH
+Mom: You hear this guy? He wants to travel! AHHAHHAAHAH
+Dad: You must have a death wish or something.
 Jimmothy: Stop laughing! What’s so bad about clock anyways?
-V3: First, stop lying. No one in this entire forest has the mind to wander around there.
+Dad: First, stop lying. No one in this entire forest has the mind to wander around there.
 - Jimmothy: Fine, I just want to know more about a clock.
 - Jimmothy: I’m not lying, I totally want to go see it!
-	V1: Stop messing with us and leave then!
-	V1: THWACK
+	Mom: Stop messing with us and leave then!
+	Mom: THWACK
 	Jimmothy: ACK!
 Jimmothy: Nevermind! I’m actually way more interested in a clock than sightseeing.
-V3: There it is!
-V3: The clock…
+Dad: There it is!
+Dad: The clock…
 Jimmothy: What about it?
-V1: We can’t talk about it here. Let’s go inside.
+Mom: We can’t talk about it here. Let’s go inside.
 do Globals._goToHouse() 
 => END
 ~ house
 I go inside their house. Their pet vigorously flaps its wings the second I look at it.
 - Jimmothy: It’s pretty cozy in here!
-	V1: Buttering us up won’t grant you an answer.
+	Mom: Buttering us up won’t grant you an answer.
 	Jimmothy: Geez, I’m just trying to be nice.
 - Jimmothy: That's a cool parrot!
-	V2: It's obviously a bat! Are you blind? 
-	V1: Stop annoying (the child?)!
-	V1: THWACK
-V3: The clock is a dangerous being. It can explode at any moment.
+	Kid: It's obviously a bat! Are you blind? 
+	Mom: Stop annoying (the child?)!
+	Mom: THWACK
+Dad: The clock is a dangerous being. It can explode at any moment.
 Jimmothy: WHAT? WHY STAY HERE, WE NEED TO LEAVE NOW!!
-V1: HUSH YOUSELF, YOU’RE DISTURBING THE BAT.
-V3: We believe there’s no point in trying to hide. We can’t prevent death.
+Mom: HUSH YOUSELF, YOU’RE DISTURBING THE BAT.
+Dad: We believe there’s no point in trying to hide. We can’t prevent death.
 - Jimmothy: I can prevent it!
 - Jimmothy: Do you all WANT to die or something??
-	V3: You are quite the loud mouth.
-	V1: We just need to live our lives in bliss and not think about our impending doom.
+	Dad: You are quite the loud mouth.
+	Mom: We just need to live our lives in bliss and not think about our impending doom.
 	Jimmothy: Isn’t there something anyone can do?
-V3: Hmm…
-V3: If you’re really so sure about this, head east. The snowy land may give you the answers you seek.
-V1: If I were you, I would ditch that idea! Just have fun before it’s all over.
+Dad: Hmm…
+Dad: If you’re really so sure about this, head east. The snowy land may give you the answers you seek.
+Mom: If I were you, I would ditch that idea! Just have fun before it’s all over.
 - Jimmothy: Thanks for the help!
 - Jimmothy: Ok bruh stop being such a downer.
-	V1: That’s it, you’re done!
-	V1: You’ve insulted my kid, my bat, and now me!
-	V1: GET HIMMM!
-	They all STAB ME
-V1: Are you done? Shoo, get out of my house!
+	Mom: That’s it, you’re done!
+	Mom: You’ve insulted my kid, my bat, and now me!
+	Mom: GET HIMMM!
+	They all STAB ME and I DIE
+	do Globals._goToHome()
+Mom: Are you done? Shoo, get out of my house!
 I get THWACKED and pushed out of her house.
 do Globals.running = true
 do Globals._goToPostHouse()

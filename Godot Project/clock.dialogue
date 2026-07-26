@@ -1,46 +1,46 @@
 ~ start
 do Globals.running = false
-Clock: CHIME CHIME
+Clocky: CHIME CHIME
 Jimmothy: Uh, hello?
-Clock: CHIMEEEEEEEE
+Clocky: CHIMEEEEEEEE
 - Jimmothy: You can speak right?
 - Jimmothy: CHIMEEEEE
-	Clock: Did u just chime back at me?
-Clock: Well would you look who it is
+	Clocky: Did u just chime back at me?
+Clocky: Well would you look who it is
 Jimmothy: Huh?
-Clock: Ugh acting oblivious after all this time that's just like you
+Clocky: Ugh acting oblivious after all this time that's just like you
 - Jimmothy: Did we like break up????
-	Clock: *ANNOYED CHIME*
+	Clocky: *ANNOYED CHIME*
 - Jimmothy: It is I.
-	Clock: *Attempts slow clap but is a clock so it just kinda looks at you*
-Clock: Bet you regret throwing me out now
-Clock: Since I've become a self-repairing world destroying bomb and all
-Clock: I even have this awesome vortex around me, that i STOLE from my favourite game.
-Clock: I may be a clock but i still have taste so obviously Balatro
+	Clocky: *Attempts slow clap but is a Clocky so it just kinda looks at you*
+Clocky: Bet you regret throwing me out now
+Clocky: Since I've become a self-repairing world destroying bomb and all
+Clocky: I even have this awesome vortex around me, that i STOLE from my favourite game.
+Clocky: I may be a Clocky but i still have taste so obviously Balatro
 Jimmothy: .........
-Clock: BACK ON TOPIC CHIME
-Clock: So like are you still upset that I killed your whole familiy?
+Clocky: BACK ON TOPIC CHIME
+Clocky: So like are you still upset that I killed your whole familiy?
 - Jimmothy: YOU DID WHAT
-	Clock: I'll take that as a yes
+	Clocky: I'll take that as a yes
 - Jimmothy: Nah not really
-	Clock: Just as unempathetic as ever
-Clock: I woke you up, EVERY SINGLE MORNING, and what do i get for it, HATE from everyone. I'm sorry you people want more sleep. JUST GO TO BED EARLIER
-Jimmothy: Clockie Poo please, I'm sorry, don't kill everyone
-Clock: So... Do you hate me?
+	Clocky: Just as unempathetic as ever
+Clocky: I woke you up, EVERY SINGLE MORNING, and what do i get for it, HATE from everyone. I'm sorry you people want more sleep. JUST GO TO BED EARLIER
+Jimmothy: Clockyie Poo please, I'm sorry, don't kill everyone
+Clocky: So... Do you hate me?
 - Jimmothy: Lowkey yes BUT STILL
-	Clock: WHAT ARE YOU KIDDING ME
-	Clock: CHIME CHIME CHIME CHIME BOOOOOOOOOOM
-	The clock exploded and you died
+	Clocky: WHAT ARE YOU KIDDING ME
+	Clocky: CHIME CHIME CHIME CHIME BOOOOOOOOOOM
+	The Clocky exploded and you died
 	do Globals._goToHome()
 - Jimmothy: No of course not
-	Clock: Really?
+	Clocky: Really?
 Jimmothy: Yes
-Clock: Wow. Ok then. So like do you think i should still explode and kill everyone?
+Clocky: Wow. Ok then. So like do you think i should still explode and kill everyone?
 - Jimmothy: No thank you
 - Jimmothy: Not going to lie I don't have a preference
-	Clock: Oh ok then
-	Clock: CHIME CHIME CHIME CHIME BOOOOOOOOOOM
-Clock: Well. Do you wanna get lunch some time?
+	Clocky: Oh ok then
+	Clocky: CHIME CHIME CHIME CHIME BOOOOOOOOOOM
+Clocky: Well. Do you wanna get lunch some time?
 Jimmothy: I'd love that
 They kissed and lived happily ever after
 do Globals.running = true

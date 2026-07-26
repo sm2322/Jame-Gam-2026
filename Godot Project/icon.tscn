@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://qil70qg7edij"]
+
+[ext_resource type="Shader" uid="uid://blglxqedfmdbd" path="res://Background.gdshader" id="1_62ljx"]
+[ext_resource type="Texture2D" uid="uid://dyt8vdxccwgha" path="res://clock/Clock_Idle.png" id="2_ud633"]
+[ext_resource type="Script" uid="uid://cy3jwenbowny5" path="res://clock.gd" id="3_yw53o"]
+[ext_resource type="FontFile" uid="uid://cgi22scfmslyf" path="res://Menus/resources/themes/m6x11plus.ttf" id="4_71e0h"]
+[ext_resource type="Script" uid="uid://bkwlopi4qn32o" path="res://addons/maaacks_menus_template/base/nodes/labels/config_name_label.gd" id="5_rhbex"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vds5n"]
+shader = ExtResource("1_62ljx")
+shader_parameter/spin_rotation_speed = 2.0
+shader_parameter/move_speed = 7.0
+shader_parameter/offset = Vector2(0, 0)
+shader_parameter/colour_1 = Color(0.4821009, 0.51607, 0.54605925, 1)
+shader_parameter/colour_2 = Color(0, 0, 0, 1)
+shader_parameter/colour_3 = Color(0, 0.05058483, 0.113201864, 1)
+shader_parameter/contrast = 3.5
+shader_parameter/lighting = 0.4
+shader_parameter/spin_amount = 0.25
+shader_parameter/pixel_filter = 740.0
+shader_parameter/is_rotating = false
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lvtmh"]
+atlas = ExtResource("2_ud633")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yyih5"]
+atlas = ExtResource("2_ud633")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qjyg3"]
+atlas = ExtResource("2_ud633")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rxos1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lvtmh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yyih5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qjyg3")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="ColorRect" type="ColorRect" unique_id=902248018]
+material = SubResource("ShaderMaterial_vds5n")
+offset_left = -130.0
+offset_top = -230.0
+offset_right = 1331.0
+offset_bottom = 784.0
+
+[node name="Clock" type="AnimatedSprite2D" parent="." unique_id=50002047]
+position = Vector2(674, 619.00006)
+scale = Vector2(2.96875, 2.96875)
+sprite_frames = SubResource("SpriteFrames_rxos1")
+autoplay = "default"
+script = ExtResource("3_yw53o")
+float_speed = 5.0
+
+[node name="TitleLabel" type="Label" parent="Clock" unique_id=988545195]
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = -355.36844
+offset_top = -203.11581
+offset_right = 241.63156
+offset_bottom = 41.884186
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("4_71e0h")
+theme_override_font_sizes/font_size = 48
+text = "Clocky's Revenge"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("5_rhbex")

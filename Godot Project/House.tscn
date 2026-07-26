@@ -684,7 +684,7 @@ position = Vector2(0, 5)
 shape = SubResource("RectangleShape2D_t4reh")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=379571199]
-position = Vector2(51, 21)
+position = Vector2(54, 32)
 zoom = Vector2(2.5, 2.5)
 
 [node name="Bat" type="AnimatedSprite2D" parent="." unique_id=219130432]

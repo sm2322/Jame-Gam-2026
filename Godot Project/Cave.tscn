@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bt7mmjsvxuejo" path="res://main_character_jame_gam_july_2026 (1).png" id="3_46o2a"]
 [ext_resource type="Texture2D" uid="uid://bnsy4tfpwpayl" path="res://25.07 - Free Mana Seed RPG Starter Pack/icons & objects/breakable pots (gray).png" id="4_arvwu"]
 [ext_resource type="Texture2D" uid="uid://cy8aswnmtnn77" path="res://clock/campfire-Sheet.png" id="5_46o2a"]
+[ext_resource type="Texture2D" uid="uid://7i6oempf880n" path="res://Fortune teller.png" id="8_6yx20"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0maa6"]
 texture = ExtResource("1_tmg1m")
@@ -419,3 +420,8 @@ texture = SubResource("GradientTexture2D_pb4b2")
 position = Vector2(215, 153)
 sprite_frames = SubResource("SpriteFrames_pb4b2")
 autoplay = "default"
+
+[node name="FortuneTeller" type="Sprite2D" parent="." unique_id=1187919132]
+position = Vector2(267, 115)
+scale = Vector2(0.3125, 0.3125)
+texture = ExtResource("8_6yx20")
