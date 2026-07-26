@@ -10,6 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://dbil4d1jqw36c" path="res://kid/angry_kid_game_jam_july_2026.png" id="6_cyg1o"]
 [ext_resource type="Script" uid="uid://b202f2ulvmcw8" path="res://player.gd" id="7_g58hp"]
 [ext_resource type="Texture2D" uid="uid://bt7mmjsvxuejo" path="res://main_character_jame_gam_july_2026 (1).png" id="8_uf5uw"]
+[ext_resource type="Texture2D" uid="uid://pukc3d7my3xs" path="res://Sprite Files/bruh_dad_game_jam_july_2026.png" id="9_b2xwe"]
+[ext_resource type="Texture2D" uid="uid://r84idarslpk2" path="res://Sprite Files/smiling_dad_jame_gam_july_2026.png" id="10_er55m"]
+[ext_resource type="Texture2D" uid="uid://b402ik11ndekk" path="res://Sprite Files/angry_dad_jame_gam_july_2026.png" id="11_3iqos"]
 [ext_resource type="Texture2D" uid="uid://lfcnlrye4x4" path="res://Bat/Idle/SimpleEnemies Bat_Idle Spritesheet.png" id="11_qaecf"]
 [ext_resource type="Texture2D" uid="uid://b3dw6biur8kt" path="res://knife_clean.png" id="12_cyg1o"]
 [ext_resource type="Texture2D" uid="uid://drt3gylmh16vm" path="res://knife_bloody.png" id="13_g58hp"]
@@ -511,7 +514,67 @@ animations = [{
 "texture": SubResource("AtlasTexture_bisgb")
 }],
 "loop": 1,
-"name": &"new_animation",
+"name": &"mad",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l5vph"]
+atlas = ExtResource("9_b2xwe")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_frcni"]
+atlas = ExtResource("9_b2xwe")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t4reh"]
+atlas = ExtResource("10_er55m")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kgho5"]
+atlas = ExtResource("10_er55m")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wom5o"]
+atlas = ExtResource("11_3iqos")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hfjjv"]
+atlas = ExtResource("11_3iqos")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xrivr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l5vph")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_frcni")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t4reh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kgho5")
+}],
+"loop": 1,
+"name": &"happy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wom5o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hfjjv")
+}],
+"loop": 1,
+"name": &"mad",
 "speed": 5.0
 }]
 
@@ -604,6 +667,11 @@ position = Vector2(186, 76)
 sprite_frames = SubResource("SpriteFrames_l5vph")
 autoplay = "default"
 
+[node name="Dad" type="AnimatedSprite2D" parent="." unique_id=8706399]
+position = Vector2(187, 112)
+sprite_frames = SubResource("SpriteFrames_xrivr")
+frame_progress = 0.013285612
+
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1117464433]
 position = Vector2(100, 100)
 script = ExtResource("7_g58hp")
@@ -643,3 +711,5 @@ texture = ExtResource("12_cyg1o")
 position = Vector2(258, 103.99999)
 rotation = 0.9075712
 texture = ExtResource("13_g58hp")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=320886247]
